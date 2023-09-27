@@ -11,8 +11,8 @@ body {
   }  
 
 /* NavBar */
-.navbar {
-  display: flex;
+nav.desktop {
+  display:flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   
@@ -20,14 +20,18 @@ body {
   padding: 10px;
 }
 
-.navbar .logo {
+nav.mobile{
+  display: none; 
+}
+
+nav .logo {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
   margin-right: 20px;
 }
 
-.navbar ul {
+nav ul {
   display:flex; 
   flex-direction: row;
   justify-content: flex-end;
@@ -37,12 +41,16 @@ body {
   padding: 0;
 }
 
-.navbar li {
+nav li {
   margin-right: 20px;
   color: black
 }
 
-.navbar a {
+nav li:hover{
+  background-color: bisque;
+}
+
+nav a {
   text-decoration: none;
 }
 
@@ -64,7 +72,8 @@ body {
 
 .title p{
   display: flex;
-  margin: 20px;
+  box-shadow:gray;
+  margin: 50px;
 }
 
 /* Subsection */ 
@@ -76,7 +85,10 @@ body {
 
 .subsection .title{
   display: flex; 
-  flex-flow: column
+  flex-flow: column;
+
+  border: 1px solid grey;
+  box-shadow: 5px 10px grey;
 }
 
 /* Footer */ 
@@ -90,4 +102,15 @@ body {
 .footer .logo{
   display: flex; 
   margin: 10px;
+}
+
+/* mobile screen */ 
+@media only screen and (max-width: 640px){
+  nav.mobile{
+    display: flex;
+  }
+
+  nav.desktop{
+    display: none;
+  }
 }
