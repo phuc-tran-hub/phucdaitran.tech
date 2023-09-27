@@ -107,7 +107,19 @@ nav a {
 /* mobile screen */ 
 @media only screen and (max-width: 640px){
   nav.mobile{
-    display: flex;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    background-color: lightseagreen;
+    align-items: baseline;
+    padding: 10px;
+  }
+
+  nav.mobile .fabars{
+    display: flex; 
+    justify-content: flex-end;
+    padding: 10px; 
   }
 
   nav.desktop{
