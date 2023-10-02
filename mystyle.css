@@ -46,19 +46,20 @@ nav li {
   color: black
 }
 
-nav li:hover{
-  background-color: bisque;
-}
-
 nav a {
   text-decoration: none;
+}
+
+nav input[type=text]{
+  display: flex;
+  padding: 4px;
+  border: none;
 }
 
 
 /* Title Boxes */ 
 .title{
   display: flex;
-
   flex-flow:row nowrap;
   flex-direction: column;
   align-items: center;
@@ -67,36 +68,44 @@ nav a {
 
 .title h1{
   display: flex;
-  margin: 20px;
+  text-align:center;
+  margin: 24px;
 }
 
 .title p{
   display: flex;
   box-shadow:gray;
-  margin: 50px;
+  margin: 48px;
 }
 
 /* Subsection */ 
-.subsection{
+.subsection-desktop{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
-.subsection .title{
+.subsection-desktop .title{
   display: flex; 
   flex-flow: column;
+}
 
-  border: 1px solid grey;
-  box-shadow: 5px 10px grey;
+.subsection-mobile{
+  display: none;
+}
+
+.subsection-mobile .title{
+  display: none; 
 }
 
 /* Footer */ 
 .footer{
   display: flex; 
   flex-flow: row nowrap;
+  background-color: paleturquoise;
   justify-content: flex-end;
   align-items: baseline;
+  margin-top: 16px;
 }
 
 .footer .logo{
@@ -104,25 +113,76 @@ nav a {
   margin: 10px;
 }
 
+
+/* CTA Button */ 
+button{
+  background-color: lightseagreen;
+  color: bisque;
+  padding: 32px 16px;
+  font-size: 20px;
+  border-radius: 25%;
+  border: none;
+
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover{
+  background-color: white;
+  color: lightseagreen;
+  border: lightseagreen;
+  border-width: 4px;
+}
+
 /* mobile screen */ 
 @media only screen and (max-width: 640px){
   nav.mobile{
     display:flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    
-    background-color: lightseagreen;
     align-items: baseline;
+    justify-items: flex-end;
+    list-style-type: none;
+    background-color: lightseagreen;
     padding: 10px;
   }
 
-  nav.mobile .fabars{
-    display: flex; 
-    justify-content: flex-end;
-    padding: 10px; 
+  nav.mobile::after {
+    content: '';
+    flex-grow: 1;
+    order:0;
+  }
+
+  .right{
+    order: 1;
+  }
+
+  .left, .right {
+    padding: 0 4px;
   }
 
   nav.desktop{
     display: none;
+  }
+
+
+    /* Subsection */ 
+  .subsection-desktop{
+    display: none;
+  }
+
+  .subsection-desktop .title{
+    display: none;
+  }
+
+  .subsection-mobile{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
+  
+  .subsection-mobile .title{
+    display: flex; 
+    flex-flow: column;
+    margin: 10px;
   }
 }
