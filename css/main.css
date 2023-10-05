@@ -3,7 +3,7 @@ body {
     padding: 0;
 
     background-color: white;
-    background-image: linear-gradient(to bottom, transparent, white), url(pic_background.jpg);
+    background-image: linear-gradient(to bottom, transparent, white), url(../pictures/pic_background.jpg);
     background-repeat: no-repeat;
 
     font-family: 'Roboto', sans-serif;
@@ -56,6 +56,20 @@ nav input[type=text]{
   border: none;
 }
 
+/* Footer */ 
+.footer{
+  display: flex; 
+  flex-flow: row nowrap;
+  background-color: paleturquoise;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-top: 16px;
+}
+
+.footer .logo{
+  display: flex; 
+  margin: 10px;
+}
 
 /* Title Boxes */ 
 .title{
@@ -65,6 +79,7 @@ nav input[type=text]{
   align-items: center;
   justify-content: center;
 }
+
 
 .title h1{
   display: flex;
@@ -96,21 +111,6 @@ nav input[type=text]{
 
 .subsection-mobile .title{
   display: none; 
-}
-
-/* Footer */ 
-.footer{
-  display: flex; 
-  flex-flow: row nowrap;
-  background-color: paleturquoise;
-  justify-content: flex-end;
-  align-items: baseline;
-  margin-top: 16px;
-}
-
-.footer .logo{
-  display: flex; 
-  margin: 10px;
 }
 
 

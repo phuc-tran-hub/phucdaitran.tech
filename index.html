@@ -1,96 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="mystyle.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+    <body>
+        <!-- desktop view -->
+        <nav class="desktop">
+            <div class="logo">
+                JAGERMOV
+            </div>
+
+            <ul>
+                <li><a href="html/workingout.html"> Working Out </a></li>
+                <li><a href="html/breaking.html"> Breaking Sessions </a></li>
+                <li><a href="html/computerscience.html"> Computer Science </a></li>
+                <li><input type="text" placeholder="Search.."></li>
+            </ul>
+        </nav>
+
+        <!-- mobile view view -->
+        <nav class="mobile">
+            <li class="left">
+                JAGERMOV
+            </li>
+            
+            <li class="right">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+
+            <li class="right">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+        </nav>
+
+
+        <div class="title"> 
+            <h1> The Journal of My Disciplines </h1>
+
+            <p>
+                Currently briging my gaps-- by the end of 2024, I will be both wide and deep in my knowledge from robotics programming to low level parallel computing to full-stack development!
+            </p>
+        </div>
+
+
+        <!-- Desktop View -->
+        <div class="subsection-desktop">
+            <div class = "title">
+                <button type="button">Work Out Journal</button>
+            </div>
+
+            <div class = "title">
+                <button type="button">Breaking Experiences</button>
+            </div>
+
+            <div class = "title">
+                <button type="button">CS Projects</button>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="subsection-mobile">
+            <div class = "title">
+                <button type="button">Work Out Journal</button>
+            </div>
+
+            <div class = "title">
+                <button type="button">Breaking Experiences</button>
+            </div>
+
+            <div class = "title">
+                <button type="button">Personal Projects</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p> Contact </p> 
+            <div class = "logo">
+                <a href="https://github.com/phuc-tran-hub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class = "logo"> 
+                <a href="https://www.linkedin.com/in/phuctran24/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
 
     <script src="https://kit.fontawesome.com/5759a7af28.js" crossorigin="anonymous"></script>
-
-<body>
-
-     <!-- desktop view -->
-    <nav class="desktop">
-        <div class="logo">
-            JAGERMOV
-        </div>
-
-        <ul>
-            <li><a href="#"> Working Out </a></li>
-            <li><a href="#"> Breaking Sessions </a></li>
-            <li><a href="#"> Computer Science </a></li>
-            <li><input type="text" placeholder="Search.."></li>
-        </ul>
-    </nav>
-
-     <!-- mobile view view -->
-     <nav class="mobile">
-        <li class="left">
-            JAGERMOV
-        </li>
-        
-        <li class="right">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </li>
-
-        <li class="right">
-            <i class="fa-solid fa-bars"></i>
-        </li>
-    </nav>
-
-
-    <div class="title"> 
-        <h1> The Journal of My Disciplines </h1>
-
-        <p>
-            Currently briging my gaps-- by the end of 2024, I will be both wide and deep in my knowledge from robotics programming to low level parallel computing to full-stack development!
-        </p>
-    </div>
-
-
-    <!-- Desktop View -->
-    <div class="subsection-desktop">
-        <div class = "title">
-            <button type="button">Work Out Journal</button>
-        </div>
-
-        <div class = "title">
-            <button type="button">Breaking Experiences</button>
-        </div>
-
-        <div class = "title">
-            <button type="button">CS Projects</button>
-        </div>
-    </div>
-
-    <!-- Mobile View -->
-    <div class="subsection-mobile">
-        <div class = "title">
-            <button type="button">Work Out Journal</button>
-        </div>
-
-        <div class = "title">
-            <button type="button">Breaking Experiences</button>
-        </div>
-
-        <div class = "title">
-            <button type="button">Personal Projects</button>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p> Contact </p> 
-        <div class = "logo">
-            <i class="fa-brands fa-github" href="https://github.com/phuc-tran-hub" ></i>
-        </div>
-
-        <div class = "logo"> 
-            <i class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/phuctran24/" ></i>
-        </div>
-    </div>
-
-</body>
+    <script src="js/main.js"></script>
+    </body>
 </html>
