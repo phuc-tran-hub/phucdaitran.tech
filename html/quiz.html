@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/breaking.css" type="text/css">
+        <link rel="stylesheet" href="../css/quiz.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -34,12 +34,47 @@
                 <i class="fa-solid fa-bars"></i>
             </li>
         </nav>
-
-        <!-- BuzzFeed Quiz -->
+        
         <div class="title">
-            <a href=../html/quiz.html>
-                <button type="button">What B-Boy are you?</button>
-            </a>
+            <p>
+                What is your favorite element of breaking?
+            </p>
+        </div>
+
+        <!-- Quiz Main Portion -->
+        <div class="quiz_boxes">
+            <div class="box">
+                <label>
+                    <img src="../pictures/Toprock.jpg"/>
+                    <input type="radio" name="first_question" value="toprock"/>
+                    <p class="text">Toprock</p>
+                </label>
+            </div>
+
+            <div class="box">
+                <label>
+                    <img src="../pictures/Footwork.jpg"/>
+                    <input type="radio" name="first_question" value="footwork"/>
+                    <p class="text">Footwork</p>
+                </label>
+            </div>
+
+            <div class="box">
+                <label>
+                    <img src="../pictures/Freeze.jpg"/>
+                    <input type="radio" name="first_question" value="freeze"/>
+                    <p class="text">Freeze</p>
+                </label>
+            </div>
+
+            <div class="box">
+                <label>
+                    <img src="../pictures/Power.jpg"/>
+                    <input type="radio" name="first_question" value="power"/>
+                    <p class="text">Power</p>
+
+                </label>
+            </div>
         </div>
 
         <!-- Footer -->
@@ -59,6 +94,6 @@
         </div>
         
         <script src="https://kit.fontawesome.com/5759a7af28.js" crossorigin="anonymous"></script>
-        <script src="../js/breaking.js"></script>
+        <script src="../js/quiz.js"></script>
     </body>
 </html>
