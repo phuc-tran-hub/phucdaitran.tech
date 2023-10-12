@@ -13,8 +13,8 @@
             </div>
 
             <ul>
-                <li><a href="../html/workingout.html"> Working Out </a></li>
-                <li><a href="../html/breaking.html"> Breaking Sessions </a></li>
+                <li><a href="../html/workingout.html"> Conditioning </a></li>
+                <li><a href="../html/breaking.html"> Breaking </a></li>
                 <li><a href="../html/computerscience.html"> Computer Science </a></li>
                 <li><input type="text" placeholder="Search.."></li>
             </ul>
@@ -37,7 +37,7 @@
         
         <!-- Question -->
         <div class="title">
-            <p>
+            <p id="quiz_question">
                 What is your favorite element of breaking?
             </p>
         </div>
@@ -47,33 +47,32 @@
             <div class="box">
                 <label>
                     <img id="choice0" src="../pictures/Toprock.jpg"/>
-                    <input type="radio" name="first_question" value="toprock"/>
-                    <p class="text">Toprock</p>
+                    <input type="radio" onclick="checkCurrentSelect(this);" name="first_question" value="toprock"/>
+                    <p id="text0" class="text">Toprock</p>
                 </label>
             </div>
 
             <div class="box">
                 <label>
                     <img id="choice1" src="../pictures/Footwork.jpg"/>
-                    <input type="radio" name="first_question" value="footwork"/>
-                    <p class="text">Footwork</p>
+                    <input type="radio" onclick="checkCurrentSelect(this);" name="first_question" value="footwork"/>
+                    <p id="text1" class="text">Footwork</p>
                 </label>
             </div>
 
             <div class="box">
                 <label>
                     <img id="choice2" src="../pictures/Freeze.jpg"/>
-                    <input type="radio" name="first_question" value="freeze"/>
-                    <p class="text">Freeze</p>
+                    <input type="radio" onclick="checkCurrentSelect(this);" name="first_question" value="freeze"/>
+                    <p id="text2" class="text">Freeze</p>
                 </label>
             </div>
 
             <div class="box">
                 <label>
                     <img id="choice3" src="../pictures/Power.jpg"/>
-                    <input type="radio" name="first_question" value="power"/>
-                    <p class="text">Power</p>
-
+                    <input type="radio" onclick="checkCurrentSelect(this);" name="first_question" value="power"/>
+                    <p id="text3" class="text">Power</p>
                 </label>
             </div>
         </div>
